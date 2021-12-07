@@ -18,7 +18,7 @@
         },
         {
             "name": "Foraging",
-            "professionHeroes": [ 23605, 35250, 54999 ],
+            "professionHeroes": [ 35250, 54999, 23605 ],
             "nonProfessionHeroes": [],
             "contractAddress": "0x3132c76acF2217646fB8391918D28a16bD8A8Ef4"
         },
