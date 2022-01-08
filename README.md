@@ -43,6 +43,14 @@ Create a Heroku account and follow the steps down below once you have the Heroku
     - `git push heroku main`
     - `heroku ps:scale web=1` 
     - `heroku open`
+    
+# Scheduler 
+Sometimes your bot may run idle. In that case you will need some sort of scheduler to restart the Dino instance. Heroku provides you with a tool [Heroku Scheduler](https://addons-sso.heroku.com/apps/56fabc13-4c6c-444c-9fe8-31e6881a74c0/addons/5671957e-2236-40c4-8a24-8aa6c25d919b) that lets you run commands to interact with your dino instance. You can set you scheduler to run at every hour, Once a day, or everything 10 minutes. 
+    
+    - add heroku scheduler to your Dino. This is in the resources tab on Heroku.
+    - Run this command to generate your Heroku auth token: heroku authorizations:create
+    - Add this curl command to your Heroku Scheduler: curl -n -X DELETE https://api.heroku.com/apps/$Your_Dino_name/dynos -H "Accept: application/vnd.heroku+json; version=3" \n -H "Content-Type: application/json" \n -H "Authorization: Bearer {token}"'
+
 
 
 # Using with DeFiKingdoms App
