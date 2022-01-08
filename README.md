@@ -38,7 +38,7 @@ Can redirect output to a file
 Create a Heroku account and follow the steps down below once you have the Heroku-Cli installed on your computer. This is allow your bot to run 24/7 without running on your physical machine. You can check the logs on your Bot's dashboard on Heroku.
 [Link to Heroku-Cli download instructions](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
     - `git a .`
-    - `git checkout -m "configured files"`
+    - `git commit -m "configured files"`
     - `heroku create`
     - `git push heroku main`
     - `heroku ps:scale web=1` 
